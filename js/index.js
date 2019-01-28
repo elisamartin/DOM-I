@@ -104,3 +104,18 @@ footer.textContent = siteContent['footer']['copyright'];
 for (let i = 0; i < navItems.length; i++) {
 	navItems[i].style.color = 'green';
 }
+
+// Add 2 new items to nav
+let navBar = document.querySelector('nav');
+
+let newStart = document.createElement('a');
+newStart.text = 'New Start!';
+newStart.style.color = 'green';
+newStart.href = '#';
+navBar.prepend(newStart);
+
+let newEnd = document.createElement('a');
+newEnd.text = 'New End!';
+newEnd.style.color = 'green';
+newEnd.href = '#';
+navBar.appendChild(newEnd);
