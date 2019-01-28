@@ -97,3 +97,10 @@ contactText[2].textContent = siteContent['contact']['email'];
 
 let footer = document.querySelector('footer');
 footer.textContent = siteContent['footer']['copyright'];
+
+// Change the color of the navigation text to be green.
+//navItems[0].style.color = 'green';
+
+for (let i = 0; i < navItems.length; i++) {
+	navItems[i].style.color = 'green';
+}
